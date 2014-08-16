@@ -29,8 +29,6 @@
   * 
   * Configurações de parametros acesso ao banco de dados
   * 
-  * @package sv
-  * @version 1.0.0
   * @author  joao paulo bastos <jpbl.bastos at gmail dot com>
   * 
   */
