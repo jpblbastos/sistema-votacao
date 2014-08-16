@@ -97,8 +97,6 @@ class DB {
     * Este metodo pode estabelecer as configurações a partir do arquivo config.php ou 
     * através de um array passado na instanciação da classe.
     * 
-    * @package sv
-    * @version 1.0.0
     * @author  joao paulo bastos <jpbl.bastos at gmail dot com>
     * @name    __construct
     * @return  boolean 
@@ -128,8 +126,6 @@ class DB {
     * open
     * Conectar ao banco de dados
     *
-    * @package   sv
-    * @version   1.0.0
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
     * @name      open
     * @return    boolean true sucesso false Erro
@@ -154,8 +150,6 @@ class DB {
     * close
     * Fecha conexao com banco de dados
     *
-    * @package   sv
-    * @version   1.0.0
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
     * @name      close
     * 
@@ -189,8 +183,6 @@ class DB {
     * fetch
     * Pega proximo dado do array da consulta armazenada em resultQuery
     *
-    * @package   sv
-    * @version   1.0.0
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
     * @name      fetch
     * @return    rows   - Linha da consulta
@@ -205,8 +197,6 @@ class DB {
     * num_rows
     * Pega numero de linhas da consulta
     *
-    * @package   sv
-    * @version   1.0.0
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
     * @name      num_rows
     * @return    num_rows  - Quantidade de linhas
