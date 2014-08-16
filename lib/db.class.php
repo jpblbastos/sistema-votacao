@@ -162,8 +162,6 @@ class DB {
     * query
     * Execulta o sql
     *
-    * @package   sv
-    * @version   1.0.0
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
     * @name      query
     * @param     string  $sql   - Comado a ser execultado no db
