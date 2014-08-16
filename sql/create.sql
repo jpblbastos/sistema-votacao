@@ -72,6 +72,7 @@ CREATE  TABLE IF NOT EXISTS `eleicao`.`eleitor` (
   `nome` VARCHAR(60) NOT NULL ,
   `sobrenome` VARCHAR(60) NOT NULL ,
   `email` VARCHAR(250) NOT NULL ,
+  `idade` CHAR(3) NOT NULL ,
   `idcidade_cidade` INT NOT NULL ,
   INDEX `eleitor_cidade_fk` (`idcidade_cidade` ASC) ,
   PRIMARY KEY (`ideleitor`) ,
