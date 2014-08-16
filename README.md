@@ -1,4 +1,4 @@
-sistema-votacao
+Sistema Votacao
 ===============
 
-Sistema único de votação eleitoral
+Sistema único de votação eleitoral =)
