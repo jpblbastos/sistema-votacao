@@ -32,14 +32,14 @@ class DB {
     * Diretorio raiz da App
     * @var string
     */
-    public $raizDir='';
+    private $raizDir='';
 
     /**
     * con
     * Conexao com o db
     * @var object
     */
-    public $con;
+    private $con;
 
     /**
     * nomeUser
@@ -98,12 +98,11 @@ class DB {
     * através de um array passado na instanciação da classe.
     * 
     * @author  joao paulo bastos <jpbl.bastos at gmail dot com>
-    * @name    __construct
     * @return  boolean 
     * 
     */
     function __construct( ) {
-        //obtem o path da biblioteca
+        //obtem o path da aplicação
         $this->raizDir = dirname(dirname( __FILE__ )) . DIRECTORY_SEPARATOR;
         //testa a existencia do arquivo de configuração
         if ( is_file($this->raizDir . 'config' . DIRECTORY_SEPARATOR . 'config.php') ){
@@ -116,8 +115,8 @@ class DB {
             $this->hostCon  = $hostCon;
         } else {
             // caso não exista arquivo de configuração retorna erro
-            $this->erroMsg = "Não foi localizado o arquivo de configuração :( ";
-            return false;
+            echo "OPS, não foi localizado o arquivo de configuração :( ";
+            exit();
         }
         return true;
     } //fim __construct
@@ -127,7 +126,6 @@ class DB {
     * Conectar ao banco de dados
     *
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
-    * @name      open
     * @return    boolean true sucesso false Erro
     * 
     */
@@ -151,7 +149,6 @@ class DB {
     * Fecha conexao com banco de dados
     *
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
-    * @name      close
     * 
     */
     public function close(){
@@ -163,7 +160,6 @@ class DB {
     * Execulta o sql
     *
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
-    * @name      query
     * @param     string  $sql   - Comado a ser execultado no db
     * @return    resultQuery    - Resultado da Pesquisa
     * 
@@ -182,7 +178,6 @@ class DB {
     * Pega proximo dado do array da consulta armazenada em resultQuery
     *
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
-    * @name      fetch
     * @return    rows   - Linha da consulta
     * 
     */ 
@@ -192,16 +187,40 @@ class DB {
     } 
 
     /**
+    * fetch_field
+    * Pega o nome da coluna
+    *
+    * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
+    * @param     int indice  - Indice da coluna
+    * @return    nome da coluna   - Linha da consulta
+    * 
+    */ 
+    public function fetch_field($indice){
+        return mysql_fetch_field($this->resultQuery, $indice);
+    } 
+
+    /**
     * num_rows
     * Pega numero de linhas da consulta
     *
     * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
-    * @name      num_rows
     * @return    num_rows  - Quantidade de linhas
     * 
     */ 
     public function num_rows(){
         return mysql_num_rows($this->resultQuery);
+    }      
+
+    /**
+    * num_rows
+    * Pega numero de campos da consulta
+    *
+    * @author    joao paulo bastos <jpbl.bastos at gmail dot com>
+    * @return    num_fields  - Quantidade de campos
+    * 
+    */ 
+    public function num_fields(){
+        return mysql_num_fields($this->resultQuery);
     }      
 
 }//fim da classe
