@@ -92,6 +92,13 @@ class EL {
     public $erro_msg='';
 
     /**
+     * erro_cod
+     * Define códigos de erros
+     * @var int 
+     */
+    public $erro_cod='';
+
+    /**
      * sql
      * Define sql
      * @var string 
@@ -290,6 +297,7 @@ class EL {
                return false; 
         }else{
             $this->erro_msg = "OPS, o cpf ".$cpf.", não exite na base de dados ! :(";
+            $this->erro_cod = 100 ; // eleitor não existe
             $this->db->close();
         	return false;
         }
@@ -321,6 +329,150 @@ class EL {
         $this->localidade['uf']=$data[2];
         /* Finalizando com o banco */   
             
+    }
+
+    /**
+     * busca_estados
+     * Busca todos estados estado e monta html
+     * @return  array contendo o sql
+     */
+    public function busca_estados(){
+        /* inicializa */
+        $data    = '';
+        $return  = '';
+
+        /* inicializa sql */
+        $this->sql='';
+
+        /* prepara sql */
+        $this->sql="SELECT estado.idestado, estado.nome FROM eleicao.estado;";
+        /* Trabalhando com a base de dados */
+        if (!$this->db->open()) {   
+           $this->erro_msg = $this->db->erroMsg;
+           return false;
+        }
+        if (! $this->db->query($this->sql)) {
+           $this->erro_msg = $this->db->erroMsg;
+           return false;
+        }
+        while ($data = $this->db->fetch()){
+              $return .= "<option value='".$data['idestado']."'>".utf8_encode($data['nome'])."</option>";
+        } 
+        $this->db->close();
+        /* Finalizando com o banco */        
+        return $return;
+    }
+
+    /**
+     * busca_cidade
+     * Busca todos cidades estado e monta html
+     *
+     * @param   int idestado - filtrar por estado
+     * @return  array contendo o sql
+     */
+    public function busca_cidades($idestado=null){
+        /* inicializa */
+        $data    = '';
+        $return  = '';
+
+        /* inicializa sql */
+        $this->sql='';
+
+        if (empty($idestado)) {
+           $this->sql = "SELECT cidade.idcidade, cidade.nome FROM eleicao.cidade;";
+        }else{
+           $this->sql="SELECT cidade.idcidade, cidade.nome FROM eleicao.cidade WHERE cidade.idestado_estado = ".$idestado.";";
+        }
+
+        /* Trabalhando com a base de dados */
+        if (!$this->db->open()) {   
+           $this->erro_msg = $this->db->erroMsg;
+           return false;
+        }
+        if (! $this->db->query($this->sql)) {
+           $this->erro_msg = $this->db->erroMsg;
+           return false;
+        }
+        while ($data = $this->db->fetch()){
+              $return .= "<option value='".$data['idcidade']."'>".utf8_encode($data['nome'])."</option>";
+        } 
+        $this->db->close();
+        /* Finalizando com o banco */        
+        return $return;
+    }
+
+    /**
+     * cria_eleitor 
+     * Cria um novo eleitor
+     *
+     * @author João Paulo Bastos <jpbl.bastos at gmail dot com>
+     * @param  string   $cpf    
+     * @param  string   $nome   
+     * @param  string   $sobrenome
+     * @param  string   $email  
+     * @param  string   $idade  
+     * @param  string   $idcidade 
+     * @return boolean  true / false       
+     */
+    public function cria_eleitor($cpf='', $nome='', $sobrenome='', $email='', $idade='', $idcidade=''){
+        /* Verifica passagem de parametros */
+        if ( (empty($cpf)) || (empty($nome)) || (empty($sobrenome)) || (empty($email)) || (empty($idade)) || (empty($idcidade)) ) {
+           $this->erro_msg = "OPS, erro falta de parametros para se criar um novo eleitor ! :0";
+           return false;
+        }
+        /* inicializa sql */
+        $this->sql='';
+        /* prepara sql */
+        $this->sql="INSERT INTO eleicao.eleitor VALUES ('', '".$cpf."','".$nome."','".$sobrenome."','".$email."', '".$idade."',".$idcidade.");";
+        /* Trabalhando com a base de dados */
+        if (!$this->db->open()) {   
+           $this->erro_msg = $this->db->erroMsg;
+           return false;
+        }
+        if ($this->db->query($this->sql)) {
+           $this->db->close();
+           return true;
+        }else{
+           $this->erro_msg = $this->db->erroMsg;
+           $this->db->close();
+           return false;
+        }
+    }
+
+    /**
+     * update_eleitor 
+     * Atualiza o eleitor de acordo com o atributo desejado
+     * 
+     * @param  string $atributo [atributo que se deseja atualizar]
+     * @param  string $dado     [Dado que se deseja atualizar]
+     * @return boolean          [true / false]
+     */
+    public function update_eleitor ($atributo='', $dado=''){
+        /* Verifica passagem de parametros */
+        if ( (empty($atributo)) || (empty($dado)) ) {
+           $this->erro_msg = "OPS, erro falta de parametros para se atualizar o eleitor ! :0";
+           return false;
+        }
+        /* inicializa sql */
+        $this->sql='';
+        /* prepara sql */
+        if ($atributo == 'idcidade_cidade') // trata criação do sql
+           $this->sql="UPDATE eleicao.eleitor SET ".$atributo." = ".$dado." WHERE eleitor.ideleitor = '".$this->get_dado('ideleitor')."' ;";
+        else
+          $this->sql="UPDATE eleicao.eleitor SET ".$atributo." = '".$dado."' WHERE eleitor.ideleitor = '".$this->get_dado('ideleitor')."' ;";
+        /* Trabalhando com a base de dados */
+        if (!$this->db->open()) {   
+           $this->erro_msg = $this->db->erroMsg;
+           return false;
+        }
+        if ($this->db->query($this->sql)) {
+           $this->db->close();
+           return true;
+        }else{
+           $this->erro_msg = $this->db->erroMsg;
+           $this->db->close();
+           return false;
+        }    
     }
 
     /**

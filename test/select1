@@ -1,8 +1,3 @@
-select candidato.nome 
-     from (eleicao.votacao inner join eleicao.candidato 
-     on votacao.idcandidato_candidato = candidato.idcandidato) ;
-
-select candidato.nome, eleitor.nome
-     from ((eleicao.votacao inner join eleicao.candidato
-     on  votacao.idcandidato_candidato = candidato.idcandidato)
-     inner join eleicao.eleitor on votacao.ideleitor_eleitor = eleitor.ideleitor);
+select count(idcandidato_candidato), candidato.nome 
+     from votacao inner join candidato on votacao.idcandidato_candidato = candidato.idcandidato
+     where idcandidato_candidato=1;

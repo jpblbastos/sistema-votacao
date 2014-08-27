@@ -1,0 +1,1333 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"id",
+				"ideleitor"
+			],
+			[
+				"sessi",
+				"session_destroy"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"em",
+				"empty"
+			],
+			[
+				"ca",
+				"candidato"
+			],
+			[
+				"err",
+				"erro_msg"
+			],
+			[
+				"GET",
+				"_GET"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"valida",
+				"valida_idade"
+			],
+			[
+				"va",
+				"valida_email"
+			],
+			[
+				"i",
+				"idade"
+			],
+			[
+				"cr",
+				"criar_eleitor"
+			],
+			[
+				"cria",
+				"cria_eleitor"
+			],
+			[
+				"exe",
+				"exec_adicional"
+			],
+			[
+				"ut",
+				"utf8_encode"
+			],
+			[
+				"no",
+				"notNull"
+			],
+			[
+				"fu",
+				"function/"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"a",
+				"ajax/"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"busca",
+				"busca_localidade"
+			],
+			[
+				"loca",
+				"localidade"
+			],
+			[
+				"fe",
+				"fetch"
+			],
+			[
+				"consul",
+				"consulta_eleitor"
+			],
+			[
+				"num",
+				"num_rows"
+			],
+			[
+				"in",
+				"indice"
+			],
+			[
+				"ver",
+				"verifica_eleitor"
+			],
+			[
+				"set",
+				"set_dado"
+			],
+			[
+				"prit",
+				"print_r"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"erro",
+				"erro_msg"
+			],
+			[
+				"cl",
+				"eleitor.class.php"
+			],
+			[
+				"null",
+				"null"
+			],
+			[
+				"com",
+				"comm	Comment - Single-line block comment"
+			],
+			[
+				"sob",
+				"sobrenome"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"comm",
+				"comm	Comment - Single-line block comment"
+			],
+			[
+				"cod",
+				"cod_doenca"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"coma",
+				"comentarios"
+			],
+			[
+				"fa",
+				"favicon-touch.png	w:128 h:128"
+			],
+			[
+				"co",
+				"cod_tec"
+			],
+			[
+				"u",
+				"UPDATE"
+			],
+			[
+				"cas",
+				"CASCADE"
+			],
+			[
+				"I",
+				"IF"
+			],
+			[
+				"ke",
+				"KEY"
+			],
+			[
+				"on",
+				"ON"
+			],
+			[
+				"c",
+				"cpf"
+			],
+			[
+				"k",
+				"KEY"
+			],
+			[
+				"N",
+				"num_tel"
+			],
+			[
+				"pr",
+				"PRIMARY"
+			],
+			[
+				"con",
+				"CONSTRAINT"
+			],
+			[
+				"de",
+				"DELETE"
+			],
+			[
+				"RE",
+				"RESTRICT"
+			],
+			[
+				"DE",
+				"DELETE"
+			],
+			[
+				"CO",
+				"cod_cont"
+			],
+			[
+				"cod_",
+				"cod_cont"
+			],
+			[
+				"COD",
+				"cod_cont"
+			],
+			[
+				"BAN",
+				"banho"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"h",
+				"h1	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "function/candidato.php",
+			"settings":
+			{
+				"buffer_size": 1807,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/candidato.class.php",
+			"settings":
+			{
+				"buffer_size": 6915,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/votar.class.php",
+			"settings":
+			{
+				"buffer_size": 6344,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ajax/ajax.js",
+			"settings":
+			{
+				"buffer_size": 8458,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "function/votar.php",
+			"settings":
+			{
+				"buffer_size": 1689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "function/eleitor.php",
+			"settings":
+			{
+				"buffer_size": 7570,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/eleitor.class.php",
+			"settings":
+			{
+				"buffer_size": 16220,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pesquisa/index.php",
+			"settings":
+			{
+				"buffer_size": 1828,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "votar/index.php",
+			"settings":
+			{
+				"buffer_size": 2385,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jota/Projetos/sistema-votacao/index.php",
+		"/home/jota/Projetos/sistema-votacao/lib/db.class.php",
+		"/home/jota/Projetos/sistema-votacao/pesquisa/index.php",
+		"/home/jota/Projetos/sistema-votacao/votar/index.php",
+		"/home/jota/Projetos/sistema-votacao/test/test4.php",
+		"/home/jota/Projetos/sistema-votacao/ajax/ajax.js",
+		"/home/jota/Projetos/sistema-votacao/function/eleitor.php",
+		"/home/jota/Projetos/sistema-votacao/lib/eleitor.class.php",
+		"/home/jota/Projetos/sistema-votacao/include/footer.inc.php",
+		"/home/jota/Projetos/sistema-votacao/css/dashboard.css",
+		"/home/jota/Projetos/sistema-votacao/artefatos/layout-sistema-votação-parte-votar/dashboard.htm",
+		"/home/jota/Projetos/sistema-votacao/css/justified-nav.css",
+		"/home/jota/Projetos/sistema-votacao/sobre/index.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/layout-sistema-votação-parte-votar/docs.min.js",
+		"/home/jota/Projetos/sistema-votacao/artefatos/layout-sistema-votação-parte-votar/dashboard.css",
+		"/home/jota/Projetos/sistema-votacao/test/test2.php",
+		"/home/jota/Projetos/sistema-votacao/test/test1.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/pedaco",
+		"/home/jota/Projetos/sistema-votacao/js/functions.js",
+		"/media/2BB563AF1FA4D3AB/jsval.html",
+		"/home/jota/Projetos/sistema-votacao/include/head.inc.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/01/index.html",
+		"/home/jota/Projetos/sistema-votacao/artefatos/01/Contato.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/01/ajax.js",
+		"/home/jota/Projetos/sistema-votacao/include/menu.inc.php",
+		"/home/jota/Projetos/sistema-votacao/votar/index.html",
+		"/home/jota/Projetos/sistema-votacao/index.html",
+		"/home/jota/Projetos/sistema-votacao/pesquisa/index.html",
+		"/home/jota/Projetos/sistema-votacao/front-end/index.html",
+		"/home/jota/Projetos/sistema-votacao/config/config.php",
+		"/home/jota/Projetos/sistema-votacao/test/test3.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/untitled.php",
+		"/home/jota/Projetos/sistema-votacao/test/teste.php",
+		"/home/jota/Projetos/sistema-votacao/sistema-votacao.sublime-project",
+		"/home/jota/Projetos/sistema-votacao/artefatos/up-V2.0-DD27042012/skel/lib/DBTools.class.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/twoclick/teste.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/twoclick/libs/DBTools (cópia).class.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/twoclick/libs/PaginaTools.class.php",
+		"/home/jota/Projetos/sistema-votacao/artefatos/twoclick/libs/DBTools.class.php",
+		"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N2/fazenda.sql",
+		"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N1/caso02.sql",
+		"/home/jota/tmp/teste.sql",
+		"/home/jota/tmp/CidadesDoBrasil.sql",
+		"/home/jota/Projetos/sistema-votacao/artefatos/up-V2.0-DD27042012/config.php",
+		"/home/jota/Projetos/twoclick/README.md",
+		"/home/jota/tmp/projects/gasilva/app/models/cliente.rb",
+		"/home/jota/tmp/projects/agenda/app/models/contato.rb",
+		"/home/jota/tmp/projects/agenda/app/controllers/contatos_controller.rb",
+		"/home/jota/tmp/projects/colcho.net-master/config/database.yml",
+		"/home/jota/tmp/projects/agenda/app/views/contatos/index.html.erb",
+		"/home/jota/tmp/projects/agenda/app/helpers/contatos_helper.rb",
+		"/home/jota/tmp/projects/agenda/app/helpers/application_helper.rb",
+		"/home/jota/tmp/projects/railsfirls/app/views/layouts/application.html.erb",
+		"/home/jota/tmp/projects/railsfirls/app/assets/stylesheets/application.css",
+		"/home/jota/tmp/projects/railsfirls/Gemfile",
+		"/home/jota/tmp/projects/railsfirls/app/models/idea.rb",
+		"/home/jota/tmp/projects/railsfirls/app/views/ideas/_form.html.erb",
+		"/home/jota/tmp/projects/railsfirls/app/views/ideas/show.html.erb",
+		"/home/jota/tmp/projects/railsfirls/config/routes.rb",
+		"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N2/fazenda-continua.sql",
+		"/home/jota/Projetos/teste/bin/ola",
+		"/home/jota/tmp/teste.html",
+		"/home/jota/tmp/gist7252060-9a50580b47a2060460f1a66a2c89d28a36415920/ExportSQLite.grt.lua",
+		"/home/jota/tmp/ola/config.ru",
+		"/home/jota/tmp/ola/config/environment.rb",
+		"/home/jota/tmp/ola/config/application.rb",
+		"/home/jota/tmp/ola/config/boot.rb",
+		"/home/jota/tmp/ola/Gemfile",
+		"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N2/Trabalho01.sql",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/config/config.sample.php",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/lib/public/util.php",
+		"/home/jota/Downloads/Trabalho01.sql",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/core/ajax/share.php",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/lib/public/db.php",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/lib/private/db/connection.php",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/lib/private/db/connectionwrapper.php",
+		"/home/jota/Projetos/contadornasnuvens/site/index.htm",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/lib/private/defaults.php",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/defaults.php",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/lib/private/mail.php",
+		"/home/jota/Projetos/contadornasnuvens/artefatos/owncloud/robots.txt",
+		"/home/jota/Projetos/contadornasnuvens/cert/ssl.crt",
+		"/home/jota/Projetos/contadornasnuvens/cert/ssl.key",
+		"/home/jota/Projetos/contadornasnuvens/login/contadornasnuvens/settings/templates/personal.php",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/index.htm",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/css/style.css",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/pedaços",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/css/animate.css",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/css/component.css",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/css/gumby.css",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/css/owl.carousel.css",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/js/mediaCheck.js",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/js/main.js",
+		"/home/jota/tmp/site/cloud/pietrasiak.com/tf/clouds/index.html",
+		"/home/jota/tmp/site/onepage/www.baribal.be/cloud/js/jquery.backgroundvideo.js",
+		"/home/jota/Projetos/twoclick/db/ddl/ddl.sql",
+		"/home/jota/tmp/squid.conf",
+		"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N1/caso04.sql",
+		"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N1/caso03.sql",
+		"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N1/caso03",
+		"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N1/mundo.sql",
+		"/home/jota/tmp/Astro-WP-1.1/theme/AstroTheme/languages/en_GB.mo",
+		"/home/jota/tmp/Astro-WP-1.1/theme/AstroTheme/languages/en_GB.po",
+		"/home/jota/tmp/Astro-WP-1.1/theme/AstroTheme/archives.php",
+		"/home/jota/tmp/Astro-WP-1.1/theme/AstroTheme/index.php",
+		"/home/jota/tmp/Astro-WP-1.1/theme/AstroTheme/header.php",
+		"/home/jota/Downloads/yEd-3.12_32-bit_setup.sh"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"consulta_eleitor",
+			"box",
+			"boxbox-geral",
+			"box",
+			"isNum",
+			"busca_",
+			" Belo Horizonte",
+			"minas ",
+			"RESTRICT",
+			"guap",
+			"Guap",
+			"inser",
+			"`",
+			"send",
+			"SetFrom",
+			"senário",
+			"cenário",
+			"atraz",
+			"uma",
+			"nuven",
+			"físicamente",
+			"png",
+			"?</",
+			"iphone",
+			"iphone.png",
+			"Please enter a valid e-mail",
+			"video",
+			"EXISTE",
+			"Posted ",
+			"Posted at"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"CASCADE",
+			"",
+			"EXISTS"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "function/candidato.php",
+					"settings":
+					{
+						"buffer_size": 1807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1547,
+								1590
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/candidato.class.php",
+					"settings":
+					{
+						"buffer_size": 6915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6724,
+								6724
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2279.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/votar.class.php",
+					"settings":
+					{
+						"buffer_size": 6344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5117,
+								5117
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2210.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ajax/ajax.js",
+					"settings":
+					{
+						"buffer_size": 8458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								833,
+								833
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 442.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "function/votar.php",
+					"settings":
+					{
+						"buffer_size": 1689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1686,
+								1686
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "function/eleitor.php",
+					"settings":
+					{
+						"buffer_size": 7570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6252,
+								6252
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1480.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/eleitor.class.php",
+					"settings":
+					{
+						"buffer_size": 16220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7878,
+								7878
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4352.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "pesquisa/index.php",
+					"settings":
+					{
+						"buffer_size": 1828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1731,
+								1731
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 291.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "votar/index.php",
+					"settings":
+					{
+						"buffer_size": 2385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1505,
+								1505
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 341.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"ele",
+				"lib/eleitor.class.php"
+			],
+			[
+				"un",
+				"artefatos/untitled.php"
+			],
+			[
+				"db",
+				"lib/db.class.php"
+			],
+			[
+				"",
+				"config/config.php"
+			],
+			[
+				"co",
+				"config/config.php"
+			],
+			[
+				"ca",
+				"/home/jota/Dropbox/Faculdade/7-periodo/B.D/exercicios/N1/caso01.sql"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true
+}

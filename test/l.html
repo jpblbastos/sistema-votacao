@@ -1,0 +1,31 @@
+ <script type='text/javascript' src="http://sistemas.ovg.org.br/bolsistas/layout/js/jquery-1.11.1.min.js"></script>
+<script type='text/javascript' src="http://sistemas.ovg.org.br/bolsistas/layout/js/meiomask-1.1.14/meiomask.min.js"></script>
+
+<script type="text/javascript">
+jQuery(function($)
+{
+    $("#cpf").setMask('cpf');
+});
+</script>
+<form action="http://sistemas.ovg.org.br/bolsistas/index.php/bolsistas/login" class="form-horizontal" autocomplete="off" method="post" accept-charset="iso-8859-1">
+  <div class="form-group">
+    <label  class="col-md-2 control-label">CPF Bolsista</label>
+    <div class="col-md-5">
+        <input class="form-control" placeholder="999.999.999-99"  type="text" id="cpf" name="cpf" value="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label  class="col-md-2 control-label">Senha</label>
+    <div class="col-md-5">
+        <input class="form-control" placeholder="Senha"  type="password" id="senha" name="senha" value="">
+    </div>
+    <div class="col-md-5">
+        <a href="http://sistemas.ovg.org.br/bolsistas/index.php/bolsistas/add">Cadastramento e Alteração de Senha Clique Aqui</a>    </div>
+  </div>
+  <div class="form-group">
+    <label  class="col-md-2 control-label"></label>
+    <div class="col-md-5">
+        <input class="btn btn-primary" type="submit" value="Enviar">
+    </div>
+  </div>
+ </form> 
