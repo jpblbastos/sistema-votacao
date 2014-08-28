@@ -43,8 +43,8 @@
       	<h3 class="text-muted">Precisamos de alguns dados ...</h3>
       	<p><i class="fa fa-2x fa-pencil-square-o fa-fw"></i></p>
       	<div class="input-group margin-bottom-sm">
-             <span class="input-group-addon"><i class="fa fa-tag fa-fw"></i></span>
-             <input class="form-control" name="cpf" id="cpf" maxlength="11" size="11" type="text" placeholder="Cpf" required autofocus>
+             <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+             <input class='form-control' name='email' id='email' maxlength='250' size='60' type='email'  placeholder='Email' required autofocus>
         </div>
         <br/>
         <!--<input type="button" name="btnPesquisar" value="Pesquisar" onclick="verifica_eleitor();" />-->

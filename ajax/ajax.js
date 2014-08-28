@@ -22,6 +22,41 @@ function CriaRequest(){
 		return request;
 }
 
+/**
+ * verifica_eleitor 
+ * Verifica se existe eleitor e retorna os dados
+ */
+function verifica_eleitor(){
+  // Declaração das variaveis
+  var email    = document.getElementById("email").value;
+
+    // valida email
+  if (! valida_email(email)){
+    alert("E-mail não informado ou invalido !");
+    return false;
+  }
+    var result = document.getElementById("box");
+    var xmlreq = CriaRequest();
+
+    // Iniciar uma requisicao
+    //alert("eleitor.php?cpf=" + cpf+"&modo=verifica_eleitor");
+  xmlreq.open("GET", "../function/eleitor.php?modo=verifica_eleitor&email=" + email, true);
+
+  // Atribui uma funcao para ser execultada sempre que houver uma mudanca de ado
+  xmlreq.onreadystatechange = function() {
+    // Verifica se foi concluido com sucesso e a conexao fechada (readyState=4)
+    if (xmlreq.readyState == 4 ) {
+           // verifica se o arquivo foi encontrado com sucesso
+            if (xmlreq.status == 200) {
+               result.innerHTML = xmlreq.responseText;
+            }else{
+               result.innerHTML = xmlreq.statusText +  xmlreq.status;
+            }
+    }
+  };
+  xmlreq.send(null);
+}
+
 
 /**
  * votar
@@ -116,7 +151,6 @@ function busca_cidades(){
  * Cria um novo eleitor
  */
 function criar_eleitor(){
-    var cpf       = document.getElementById("cpf").value;
     var nome      = document.getElementById("nome").value; 
     var sobrenome = document.getElementById("sobrenome").value;
     var email     = document.getElementById("email").value;
@@ -124,11 +158,6 @@ function criar_eleitor(){
     var idcidade  = document.getElementById("select_cidade").value;
     
     // faz validações
-    // valida cpf
-	if (! valida_cpf(cpf)){
-		alert("Cpf informado invalido !");
-		return false;
-	}
     //valida nome e sobre nome
     if (! valida_nome(nome)) {
        alert("Nome não informado ou invalido !");
@@ -155,7 +184,7 @@ function criar_eleitor(){
 
     // Iniciar uma requisicao
     //alert("../function/eleitor.php?modo=criar_eleitor&cpf=" + cpf + "&nome=" + nome + "&sobrenome=" + sobrenome + "&email=" + email + "&idade=" + idade + "&idcidade=" + idcidade);
-	xmlreq.open("GET", "../function/eleitor.php?modo=criar_eleitor&cpf=" + cpf + "&nome=" + nome + "&sobrenome=" + sobrenome + "&email=" + email + "&idade=" + idade + "&idcidade=" + idcidade, true);
+	xmlreq.open("GET", "../function/eleitor.php?modo=criar_eleitor&nome=" + nome + "&sobrenome=" + sobrenome + "&email=" + email + "&idade=" + idade + "&idcidade=" + idcidade, true);
 
 	// Atribui uma funcao para ser execultada sempre que houver uma mudanca de ado
 	xmlreq.onreadystatechange = function() {
@@ -170,41 +199,6 @@ function criar_eleitor(){
 		}
 	};
 	xmlreq.send(null);    
-}
-
-/**
- * verifica_eleitor 
- * Verifica se existe eleitor e retorna os dados
- */
-function verifica_eleitor(){
-	// Declaração das variaveis
-	var cpf    = document.getElementById("cpf").value;
-
-    // valida cpf
-	if (! valida_cpf(cpf)){
-		alert("Cpf informado invalido !");
-		return false;
-	}
-    var result = document.getElementById("box");
-    var xmlreq = CriaRequest();
-
-    // Iniciar uma requisicao
-    //alert("eleitor.php?cpf=" + cpf+"&modo=verifica_eleitor");
-	xmlreq.open("GET", "../function/eleitor.php?modo=verifica_eleitor&cpf=" + cpf, true);
-
-	// Atribui uma funcao para ser execultada sempre que houver uma mudanca de ado
-	xmlreq.onreadystatechange = function() {
-		// Verifica se foi concluido com sucesso e a conexao fechada (readyState=4)
-		if (xmlreq.readyState == 4 ) {
-           // verifica se o arquivo foi encontrado com sucesso
-            if (xmlreq.status == 200) {
-               result.innerHTML = xmlreq.responseText;
-            }else{
-               result.innerHTML = xmlreq.statusText +  xmlreq.status;
-            }
-		}
-	};
-	xmlreq.send(null);
 }
 
 /**

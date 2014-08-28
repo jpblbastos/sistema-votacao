@@ -43,7 +43,7 @@ if (isset($_GET["modo"])) {
     
     // trata o modo passado
     if ($modo === "verifica_eleitor") {
-        if ($eleitor->verifica_eleitor($_GET["cpf"])){ // eleitor existe
+        if ($eleitor->verifica_eleitor($_GET["email"])){ // eleitor existe
            //$_SESSION['ideleitor'] = $eleitor->get_dado('ideleitor');
            $return .= "<form class='form-signin' role='form'>";
            $return .= "<input type='hidden' name='ideleitor' id='ideleitor' value='".$eleitor->get_dado('ideleitor')."'>";
@@ -62,10 +62,6 @@ if (isset($_GET["modo"])) {
              $return .= "<h3 class='text-muted'>Termine seu cadastro ...</h3>";
       	     $return .= "<p><i class='fa fa-2x fa-pencil-square-o fa-fw'></i></p>";
              $return .= "<div class='input-group margin-bottom-sm'>";
-             $return .= "    <span class='input-group-addon'><i class='fa fa-tag fa-fw'></i></span>";
-             $return .= "    <input class='form-control' name='cpf' id='cpf' maxlength='11' size='11' type='text'  value='".$_GET["cpf"]."'placeholder='Cpf' required>";
-             $return .= "</div>";
-             $return .= "<div class='input-group margin-bottom-sm'>";
              $return .= "     <span class='input-group-addon'><i class='fa fa-user fa-fw'></i></span>";
              $return .= "     <input class='form-control' name='nome' id='nome' maxlength='60' size='60' type='text'  placeholder='Nome' required autofocus >";
              $return .= "</div>";
@@ -75,7 +71,7 @@ if (isset($_GET["modo"])) {
              $return .= "</div>";
              $return .= "<div class='input-group margin-bottom-sm'>";
              $return .= "     <span class='input-group-addon'><i class='fa fa-envelope-o fa-fw'></i></span>";
-             $return .= "     <input class='form-control' name='email' id='email' maxlength='250' size='60' type='email'  placeholder='Email' required>";
+             $return .= "     <input class='form-control' name='email' id='email' maxlength='250' size='60' type='email' value='".$_GET["email"]."'  placeholder='Email' required>";
              $return .= " </div>";
              $return .= " <div class='input-group'>";
              $return .= "     <span class='input-group-addon'><i class='fa  fa-heart-o fa-fw'></i></span>";
@@ -98,10 +94,10 @@ if (isset($_GET["modo"])) {
             echo $return .= "<h3 class='text-muted'>".$eleitor->erro_msg."</h3>";
         }
     }elseif ($modo === "criar_eleitor") {
-         if ( (isset($_GET["cpf"])) && (isset($_GET["nome"])) && (isset($_GET["sobrenome"])) && (isset($_GET["email"])) && (isset($_GET["idade"])) && (isset($_GET["idcidade"]))  ) {
-            if ($eleitor->cria_eleitor($_GET["cpf"],utf8_decode($_GET["nome"]),utf8_decode($_GET["sobrenome"]),$_GET["email"],$_GET["idade"],$_GET["idcidade"]) ){
+         if ( (isset($_GET["nome"])) && (isset($_GET["sobrenome"])) && (isset($_GET["email"])) && (isset($_GET["idade"])) && (isset($_GET["idcidade"]))  ) {
+            if ($eleitor->cria_eleitor(utf8_decode($_GET["nome"]),utf8_decode($_GET["sobrenome"]),$_GET["email"],$_GET["idade"],$_GET["idcidade"]) ){
                //$_SESSION['ideleitor'] = $eleitor->get_dado('ideleitor');
-               $eleitor->verifica_eleitor($_GET["cpf"]);
+               $eleitor->verifica_eleitor($_GET["email"]);
                $return .= "<form class='form-signin' role='form'>";
                $return .= "<input type='hidden' name='ideleitor' id='ideleitor' value='".$eleitor->get_dado('ideleitor')."'>";
                $return .= "<h3 class='text-muted'>Escolha tipo de votação ...</h3>";

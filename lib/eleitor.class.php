@@ -33,12 +33,6 @@ class EL {
     private $ideleitor=null;
 
     /**
-     * cpf
-     * @var char (11)
-     */
-    private $cpf='';
-
-    /**
      * nome
      * @var string 
      */
@@ -165,9 +159,6 @@ class EL {
             case "ideleitor":
                  $this->ideleitor=$dado;
                  break;
-             case "cpf":
-                 $this->cpf=$dado;
-                 break;
              case "nome":
                  $this->nome=$dado;
                  break;
@@ -222,9 +213,6 @@ class EL {
             case "ideleitor":
                  return $this->ideleitor;
                  break;
-             case "cpf":
-                 return $this->cpf;
-                 break;
              case "nome":
                  return $this->nome;
                  break;
@@ -261,20 +249,20 @@ class EL {
      * Faz a verificação se existe um eleitor, se existe já preenche seus atributos
      *
      * @author joao paulo bastos <jpbl.bastos at gmail dot com>
-     * @param  string $cpf [cpf a ser consultado]
-     * @return boolean     [true se existe / false se não exite ou e caso de falhas]
+     * @param  string $email [email a ser consultado]
+     * @return boolean       [true se existe / false se não exite ou e caso de falhas]
      */
-    public function verifica_eleitor($cpf=''){
+    public function verifica_eleitor($email=''){
     	/* inicializa sql */
     	$this->sql='';
     	$flag=null;
         /* Verifica se foi passado o parametro */
-        if (empty($cpf)) {
-        	$this->erro_msg = "OPS, erro o parametro cpf não foi informado. Impossivel fazer a consulta ! :(";
+        if (empty($email)) {
+        	$this->erro_msg = "OPS, erro o parametro e-mail não foi informado. Impossivel fazer a consulta ! :(";
         	return false;
         }
         /* prepara sql */
-        $this->sql="SELECT ideleitor FROM eleicao.eleitor WHERE eleitor.cpf = '".$cpf."';";
+        $this->sql="SELECT ideleitor FROM eleicao.eleitor WHERE eleitor.email = '".$email."';";
         /* Trabalhando com a base de dados */
         if (!$this->db->open()) {   
            $this->erro_msg = $this->db->erroMsg;
@@ -296,7 +284,7 @@ class EL {
             else
                return false; 
         }else{
-            $this->erro_msg = "OPS, o cpf ".$cpf.", não exite na base de dados ! :(";
+            $this->erro_msg = "OPS, o e-mail ".$email.", não exite na base de dados ! :(";
             $this->erro_cod = 100 ; // eleitor não existe
             $this->db->close();
         	return false;
@@ -406,7 +394,6 @@ class EL {
      * Cria um novo eleitor
      *
      * @author João Paulo Bastos <jpbl.bastos at gmail dot com>
-     * @param  string   $cpf    
      * @param  string   $nome   
      * @param  string   $sobrenome
      * @param  string   $email  
@@ -414,16 +401,16 @@ class EL {
      * @param  string   $idcidade 
      * @return boolean  true / false       
      */
-    public function cria_eleitor($cpf='', $nome='', $sobrenome='', $email='', $idade='', $idcidade=''){
+    public function cria_eleitor($nome='', $sobrenome='', $email='', $idade='', $idcidade=''){
         /* Verifica passagem de parametros */
-        if ( (empty($cpf)) || (empty($nome)) || (empty($sobrenome)) || (empty($email)) || (empty($idade)) || (empty($idcidade)) ) {
+        if ( (empty($nome)) || (empty($sobrenome)) || (empty($email)) || (empty($idade)) || (empty($idcidade)) ) {
            $this->erro_msg = "OPS, erro falta de parametros para se criar um novo eleitor ! :0";
            return false;
         }
         /* inicializa sql */
         $this->sql='';
         /* prepara sql */
-        $this->sql="INSERT INTO eleicao.eleitor VALUES ('', '".$cpf."','".$nome."','".$sobrenome."','".$email."', '".$idade."',".$idcidade.");";
+        $this->sql="INSERT INTO eleicao.eleitor VALUES ('','".$email."','".$nome."','".$sobrenome."', '".$idade."',".$idcidade.");";
         /* Trabalhando com a base de dados */
         if (!$this->db->open()) {   
            $this->erro_msg = $this->db->erroMsg;
@@ -489,7 +476,7 @@ class EL {
         $data='';  /* Armazena a linha consultada */
 
         /* prepara sql */
-        $this->sql="SELECT cpf, nome, sobrenome, email, idade, idcidade_cidade FROM eleicao.eleitor WHERE eleitor.ideleitor = '".$this->get_dado('ideleitor')."';";
+        $this->sql="SELECT nome, sobrenome, email, idade, idcidade_cidade FROM eleicao.eleitor WHERE eleitor.ideleitor = '".$this->get_dado('ideleitor')."';";
         /* Trabalhando com a base de dados */
         if (!$this->db->open()) {   
            $this->erro_msg = $this->db->erroMsg;
