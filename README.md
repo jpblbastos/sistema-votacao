@@ -1,4 +1,4 @@
-Sistema Votacao 1.0.0
-===============
+Sistema de Pesquisa Eleitoral 1.0.0
+===================================
 
-Sistema único de votação eleitoral =)
+Sistema simples para pesquisa de intenção de votos para eleições =)
